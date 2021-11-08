@@ -75,9 +75,6 @@ const Table: React.FC<TableProps> = ({verticals, projects, dataLoaded}) => {
       projectMap.get(vertical)?.projects.push(...[projects].flat())
     }
 
-    console.log('projectMap: ', projectMap)
-    console.log('values of map: ', [...projectMap.values()])
-
     return [...projectMap.values()]
   }
 
